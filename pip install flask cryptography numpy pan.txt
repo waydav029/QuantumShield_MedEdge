@@ -1,0 +1,1 @@
+pip install flask cryptography numpy pandas scikit-learn joblib

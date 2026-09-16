@@ -1,0 +1,114 @@
+/* QuantumShield MedEdge - Hospital SOC Enterprise White Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
+
+body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Card Styling - Apple / Stripe / Linear Minimal White Style */
+.white-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.white-card:hover {
+    box-shadow: 0 10px 25px -3px rgba(15, 23, 42, 0.07), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+}
+
+/* Flowing SVG Line Dash Animation for Healthcare Pipeline */
+@keyframes flowDash {
+    to {
+        stroke-dashoffset: -32;
+    }
+}
+
+.flowing-line {
+    stroke-dasharray: 8, 8;
+    animation: flowDash 1.2s linear infinite;
+}
+
+/* Active Node Pulsing Glow Animation */
+@keyframes nodePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 16px rgba(16, 185, 129, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.active-node-pulse {
+    animation: nodePulse 2s infinite;
+}
+
+@keyframes purplePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 16px rgba(139, 92, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+    }
+}
+
+.purple-node-pulse {
+    animation: purplePulse 2s infinite;
+}
+
+/* Header Navigation Bar */
+.app-header {
+    background: #0f172a;
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+}
+
+/* Telemetry Table */
+.telemetry-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 14px 18px;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.telemetry-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
